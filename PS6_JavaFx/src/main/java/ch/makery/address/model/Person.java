@@ -36,7 +36,7 @@ public class Person extends PersonDomainModel {
 		try {
 			dBirthDay = new SimpleDateFormat("yyyy-mm-dd").parse(birthday.toString());
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		this.setBirthday(dBirthDay);

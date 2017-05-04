@@ -24,7 +24,7 @@ public class PersonDAL {
 			tx = session.beginTransaction();
 			session.save(per);
 			tx.commit();
-		} catch (HibernateException e) {
+		} catch (HibernateException e) { 
 			if (tx != null)
 				tx.rollback();
 			e.printStackTrace();
@@ -79,7 +79,7 @@ public class PersonDAL {
 			} else
 				return null;
 
-			tx.commit();
+			tx.commit(); 
 		} catch (HibernateException e) {
 			if (tx != null)
 				tx.rollback();

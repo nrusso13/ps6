@@ -110,7 +110,7 @@ public class PersonEditDialogController {
     		try {
     			dBirthDay = new SimpleDateFormat("dd/MM/yyyy").parse(birthdayField.getText());
     		} catch (ParseException e) {
-    			// TODO Auto-generated catch block
+    			
     			e.printStackTrace();
     		}
             
